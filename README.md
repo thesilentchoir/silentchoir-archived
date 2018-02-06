@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Python >= 3.4
 * Pip
 * Virtualenv
-* Posgres
+* Postgres
 
 
 ### Dev Setup for Mac Users
@@ -44,7 +44,7 @@ $ source env/bin/activate
 Install packages.
 
 ```
-$ pip install -r requirement_file.txt
+$ pip install -r requirements.txt
 ```
 
 Copy the `.env` file from a teammate and add it to your project directory.
