@@ -44,7 +44,7 @@ $ source env/bin/activate
 Install packages.
 
 ```
-$ pip install -r requirement_file.txt
+$ pip install -r requirements.txt
 ```
 
 Copy the `.env` file from a teammate and add it to your project directory.
