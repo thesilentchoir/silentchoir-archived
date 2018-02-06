@@ -52,7 +52,7 @@ Copy the `.env` file from a teammate and add it to your project directory.
 Install Postgres and create the database in the Postgres interactive command propmp.
 
 ```
->> CREATE DATABASE <database_name>;
+>> CREATE DATABASE silentchoir;
 ```
 
 Verify you can run the application.
