@@ -49,7 +49,7 @@ $ pip install -r requirements.txt
 
 Copy the `.env` file from a teammate and add it to your project directory.
 
-Install Postgres and create the database in the Postgres interactive command propmp.
+Install Postgres and create the database in the Postgres interactive command prompt.
 
 ```
 >> CREATE DATABASE silentchoir;

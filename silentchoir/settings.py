@@ -53,7 +53,7 @@ ROOT_URLCONF = 'silentchoir.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['silentchoir/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
