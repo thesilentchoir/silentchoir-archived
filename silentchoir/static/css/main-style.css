@@ -1,9 +1,35 @@
+html {
+   background-color: #13292b;
+   font-size: 1em;
+   letter-spacing: .15em;
+   color: #a8a8a8;
+   font-family: arial, helvetica, sans-serif;
+}
+
 .center {
     margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
     width: 50%;
     padding: 10px;
+    text-align: justify;
 }
 
 .header {
+    margin-top: 3em;
     text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #ffffff
+}
+
+.footer {
+	margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+    font-size: .75em;
+    font-weight: 100;
 }
