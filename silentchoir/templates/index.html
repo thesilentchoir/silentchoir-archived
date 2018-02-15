@@ -1,14 +1,23 @@
-<!-- howdy/templates/index.html -->
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Howdy!</title>
+        <title>The Silent Choir Project</title>
+        <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
     </head>
     <body>
-        <h1>The Silent Choir Project</h1>
-        <div>Welcome to the Silent Choir. Our goal is to uncover patterns of harassment and abuse by connecting survivors. 
+        <div class="container">
+            <h1 class="header">The Silent Choir Project</h1>
 
-		If you have been the victim of abuse in the workplace, at school, at home, or anywhere at all, and would like to share your story on a safe platform, on your own terms, please join us.</div>
+            <div class="center">
+                Welcome to the Silent Choir. Our goal is to uncover patterns of harassment and abuse by connecting survivors.
+
+                If you have been the victim of abuse in the workplace, at school, at home, or anywhere at all,
+                and would like to share your story on a safe platform, on your own terms, please join us.
+            </div>
+
+            <div class="footer"></div>
+        </div>
     </body>
 </html>
