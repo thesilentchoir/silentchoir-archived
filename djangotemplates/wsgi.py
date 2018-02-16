@@ -1,5 +1,5 @@
 """
-WSGI config for silentchoir project.
+WSGI config for djangotemplates project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -8,10 +8,9 @@ https://docs.djangoproject.com/en/2.0/howto/deployment/wsgi/
 """
 
 import os
-from dotenv import load_dotenv
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "silentchoir.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangotemplates.settings")
 
 application = get_wsgi_application()
