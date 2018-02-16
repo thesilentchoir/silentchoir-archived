@@ -1,4 +1,4 @@
-<!-- djangotemplates/silentchoir/templates/intro.html-->
+<!-- djangotemplates/silentchoir/templates/about.html-->
 
 <!DOCTYPE html>
 {% load static %}
@@ -13,23 +13,31 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="header">INTRODUCTION</h1>
+            <h1 class="header">WHO WE ARE</h1>
 
             <form>
 
             <div class="center">
-                <p>
-                The Silent Choir is a secure, safe, reporting tool for survivors to name their offender(s). Based on these anonymous reports, we aim to connect survivors who have been harassed or abused by the same offender.
-                </p>
+            	<p>
+                We are a group of survivors, allies, and techies, looking to empower those who have survived experiences they may be uncomfortable sharing. 
+            	</p>
 
-                <p>
-                By connecting survivors in this way, we hope to create a path to accountability that may pave the way towards healing. We aim to democratize the tools that have been available to the victims of such high profile cases as Harvey Weinstein and Bill Cosby.
-                </p>
+            	<p>
+				We understand how difficult it can be to come forward and have built the Silent Choir platform as a closed system. Reports are not searchable or discoverable by anybody. Our only goal is to privately and securely connect survivors who share a common offender.
+				</p>	
+
+				<p>
+				Reports are always encrypted and untraceable, and participants decide whether or not to connect with other survivors. Reports are not shared with law enforcement without prior consent or notice. Reports remain completely anonymous unless requested otherwise by the participant submitting them. Reports will not be shared with anybody -- not even those with whom you share an offender with -- without explicit consent. The sole purpose of a report is for us to be able to make meaningful connections between anonymous survivors. 
+				</p>
+
+				<p>
+				You can abandon your report and delete it entirely at any time and note that we do not store any of your data.
+				</p>
             </div>
 
             <div class="form-actions">
                 <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
-                <a href="{% url 'about' %}"><button type="button" class="btn btn-default">Continue</button></a>
+                <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Continue</button></a>
             </div>
 
             </form>
