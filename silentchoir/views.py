@@ -1,6 +1,18 @@
+# djangotemplates/example/views.py
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView # Import TemplateView
 
+# Add the two views we have been talking about  all this time :)
 class HomePageView(TemplateView):
-    def get(self, request, **kwargs):
-        return render(request, 'index.html', context=None)
+    template_name = "index.html"
+
+class IntroPageView(TemplateView):
+    template_name = "intro.html"
+
+class AboutPageView(TemplateView):
+    template_name = "about.html"
+
+class LegalPageView(TemplateView):
+    template_name = "legal.html"
+
+# Create your views here.
