@@ -12,4 +12,7 @@ class IntroPageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = "about.html"
 
+class LegalPageView(TemplateView):
+    template_name = "legal.html"
+
 # Create your views here.

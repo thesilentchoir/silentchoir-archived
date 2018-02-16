@@ -1,4 +1,4 @@
-<!-- djangotemplates/silentchoir/templates/about.html-->
+<!-- djangotemplates/silentchoir/templates/legal.html-->
 
 <!DOCTYPE html>
 {% load static %}
@@ -13,31 +13,31 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="header">WHO WE ARE</h1>
+            <h1 class="header">LEGAL & SECURITY NOTICE</h1>
 
             <form>
 
             <div class="center">
             	<p>
-                We are a group of survivors, allies, and techies, looking to empower those who have survived experiences they may be uncomfortable sharing. 
+                Security is our highest priority. Absolutely everything submitted to this site will be scrubbed of any identifiers, encrypted (detail) and stored in a way that we, nor anybody else, cannot trace it back to you. 
             	</p>
 
             	<p>
-				We understand how difficult it can be to come forward and have built the Silent Choir platform as a closed system. Reports are not searchable or discoverable by anybody. Our only goal is to privately and securely connect survivors who share a common offender.
-				</p>	
+				Nothing is easy about reporting harassment and abuse and our utmost priority is your security. It is our obligation to create a legal framework that protects you from undermining a potential legal case but also from being sued for speaking out. 
+                </p>	
 
 				<p>
-				Reports are always encrypted and untraceable, and participants decide whether or not to connect with other survivors. Reports are not shared with law enforcement without prior consent or notice. Reports remain completely anonymous unless requested otherwise by the participant submitting them. Reports will not be shared with anybody -- not even those with whom you share an offender with -- without explicit consent. The sole purpose of a report is for us to be able to make meaningful connections between anonymous survivors. 
-				</p>
+				For this reason, at this time, we are only taking reports from those who are ready to consider potential legal action against their offenders. If you feel that you would never be comfortable revealing your identity to a legal advocate or therapist (even if you knew that you are not alone with your experience), we strongly discourage you from continuing with a report.
+                </p>
 
 				<p>
-				You can abandon your report and delete it entirely at any time and note that we do not store any of your data.
+                However, if knowing you are not alone, you would be wiling to discuss your options with a legal advocate, then let’s proceed.
 				</p>
             </div>
 
             <div class="form-actions">
                 <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
-                <a href="{% url 'legal' %}"><button type="button" class="btn btn-default">Continue</button></a>
+                <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Continue</button></a>
             </div>
 
             </form>

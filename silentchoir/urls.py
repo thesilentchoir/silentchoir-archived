@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^$', views.HomePageView.as_view(), name='home'),
     url(r'^intro/$', views.IntroPageView.as_view(), name='intro'),
     url(r'^about/$', views.AboutPageView.as_view(), name='about'),
+    url(r'^legal/$', views.LegalPageView.as_view(), name='legal'),
 ]
