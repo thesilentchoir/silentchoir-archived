@@ -11,23 +11,26 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="header">THE SILENT CHOIR PROJECT</h1>
+            <h1 class="header">INTRODUCTION</h1>
+
+            <form>
 
             <div class="center">
                 <p>
-                Welcome to the Silent Choir. Our goal is to uncover patterns of harassment and abuse by connecting survivors.
+                The Silent Choir is a secure, safe, reporting tool for survivors to name their offender(s). Based on these anonymous reports, we aim to connect survivors who have been harassed or abused by the same offender.
                 </p>
 
                 <p>
-                If you have been the victim of abuse in the workplace, at school, at home, or anywhere at all,
-                and would like to share your story on a safe platform, on your own terms, please join us.
+                By connecting survivors in this way, we hope to create a path to accountability that may pave the way towards healing. We aim to democratize the tools that have been available to the victims of such high profile cases as Harvey Weinstein and Bill Cosby.
                 </p>
             </div>
 
-            <!--This button doesn't do anything right now, will need to link it to the first page of the form.-->
             <div class="form-actions">
-                <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Join the Silent Choir</button></a>
+                <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
+                <a href="{% url 'about' %}"><button type="button" class="btn btn-default">Continue</button></a>
             </div>
+
+            </form>
 
             <hr>
 

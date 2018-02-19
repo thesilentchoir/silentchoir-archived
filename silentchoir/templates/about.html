@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Silent Choir Project</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">WHO WE ARE</h1>
+
+            <form>
+
+            <div class="center">
+            	<p>
+                We are a group of survivors, allies, and techies, looking to empower those who have survived experiences they may be uncomfortable sharing.
+            	</p>
+
+            	<p>
+				We understand how difficult it can be to come forward and have built the Silent Choir platform as a closed system. Reports are not searchable or discoverable by anybody. Our only goal is to privately and securely connect survivors who share a common offender.
+				</p>
+
+				<p>
+				Reports are always encrypted and untraceable, and participants decide whether or not to connect with other survivors. Reports are not shared with law enforcement without prior consent or notice. Reports remain completely anonymous unless requested otherwise by the participant submitting them. Reports will not be shared with anybody -- not even those with whom you share an offender with -- without explicit consent. The sole purpose of a report is for us to be able to make meaningful connections between anonymous survivors.
+				</p>
+
+				<p>
+				You can abandon your report and delete it entirely at any time and note that we do not store any of your data.
+				</p>
+            </div>
+
+            <div class="form-actions">
+                <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
+                <a href="{% url 'legal' %}"><button type="button" class="btn btn-default">Continue</button></a>
+            </div>
+
+            </form>
+
+            <hr>
+
+            <div class="footer">
+                Note: If anything in this questionnaire makes your feel uncomfortable or induces any unwanted stress, please do not hesitate to use the <a style="color:#91b735;" href="https://rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank">National Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) to be connected with a trained staff member from a sexual assault service provider in your area. This hotline is operated by <a style="color:#91b735;" href="https://www.rainn.org/" target="_blank">RAINN</a> who can provide counseling and advisory services for survivors.
+            </div>
+        </div>
+    </body>
+</html>
