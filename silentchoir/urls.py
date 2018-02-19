@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^about/$', views.AboutPageView.as_view(), name='about'),
     url(r'^legal/$', views.LegalPageView.as_view(), name='legal'),
     url(r'^consent/$', views.ConsentPageView.as_view(), name='consent'),
+    url(r'^trigger/$', views.TriggerPageView.as_view(), name='trigger'),
 ]

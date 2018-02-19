@@ -14,3 +14,6 @@ class LegalPageView(TemplateView):
 
 class ConsentPageView(TemplateView):
     template_name = "consent.html"
+
+class TriggerPageView(TemplateView):
+    template_name = "trigger.html"
