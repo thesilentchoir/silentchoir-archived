@@ -20,3 +20,6 @@ class TriggerPageView(TemplateView):
 
 class WithWhomPageView(TemplateView):
     template_name = "q1-withWhom.html"
+
+class ComfortLevelPageView(TemplateView):
+    template_name = "q2-comfortLevel.html"
