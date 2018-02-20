@@ -17,3 +17,6 @@ class ConsentPageView(TemplateView):
 
 class TriggerPageView(TemplateView):
     template_name = "trigger.html"
+
+class WithWhomPageView(TemplateView):
+    template_name = "q1-withWhom.html"
