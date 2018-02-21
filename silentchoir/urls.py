@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^trigger/$', views.TriggerPageView.as_view(), name='trigger'),
     url(r'^q1-withWhom/$', views.WithWhomPageView.as_view(), name='q1-withWhom'),
     url(r'^q2-comfortLevel/$', views.ComfortLevelPageView.as_view(), name='q2-comfortLevel'),
+    url(r'^q3-email/$', views.EmailPageView.as_view(), name='q3-email'),
 ]

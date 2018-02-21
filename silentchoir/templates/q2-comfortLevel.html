@@ -19,7 +19,7 @@
             <form>
                 
            <div class="form-check">
-                <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel1" value="Even thinking about it gives me severe anxiety and I never discuss it.">
+                <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel1" value="Even thinking about it gives me severe anxiety and I never discuss it." required />
                 <label class="form-check-label" for="comfortLevel1">
                Even thinking about it gives me severe anxiety and I never discuss it.
                 </label>
@@ -52,9 +52,8 @@
             <br></br>
 
             <div class="form-actions">
-                <!--AS: How do I make it such that a selection must be made before continuing on?-->
-                <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
-                <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Continue</button></a>
+                <a href="{% url 'home' %}"><button class="btn btn-default">Take me home</button></a>
+                <a href="{% url 'q3-email' %}"><button class="btn btn-default">Continue</button></a>
             </div>
 
             </form>

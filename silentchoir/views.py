@@ -23,3 +23,6 @@ class WithWhomPageView(TemplateView):
 
 class ComfortLevelPageView(TemplateView):
     template_name = "q2-comfortLevel.html"
+
+class EmailPageView(TemplateView):
+    template_name = "q3-email.html"
