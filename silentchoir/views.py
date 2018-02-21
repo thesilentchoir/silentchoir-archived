@@ -26,3 +26,9 @@ class ComfortLevelPageView(TemplateView):
 
 class EmailPageView(TemplateView):
     template_name = "q3-email.html"
+
+class WhenPageView(TemplateView):
+    template_name = "q4-when.html"
+
+class SettingPageView(TemplateView):
+    template_name = "q5-setting.html"

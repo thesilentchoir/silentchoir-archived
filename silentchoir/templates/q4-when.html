@@ -13,22 +13,21 @@
        
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="header"> Please provide your email address.</h3>
-            <p>*For your security, and the safety and security of others, please enter an email we can use to verify your account and can reach you on at a later date. We will only contact you with information directly related to your report. We strongly advise that you use an email address that is not managed or accessible to anybody but you (including, for example, an employer or spouse).</p>
+            <h3 class="header"> When did the incident you are reporting take place?</h3>
+            <p>*Please be as accurate as you can.</p>
 
             <br></br>
 
             <form>
-              <div class="form-group">
-                <label for="InputEmail1">Email address</label>
-                <input type= "email" class= "form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Please enter a valid email address">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
               
+              <div class="center">
+                <p>TBD</p>
+              </div>
+
               <div class="form-actions"> 
                 <!--AS: How do I make it such that a selection must be made before continuing on?--> 
                 <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
-                <a href="{% url 'q4-when' %}"><button type="button" class="btn btn-default">Continue</button></a>
+                <a href="{% url 'q5-setting' %}"><button type="button" class="btn btn-default">Continue</button></a>
               </div>
             </form>
 
