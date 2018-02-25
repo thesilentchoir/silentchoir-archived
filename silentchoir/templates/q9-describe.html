@@ -18,12 +18,15 @@
             <br></br>
 
             <form>
-                
-                                
+            
+                <div class="form-group">
+                    <label for="describeInOwnWords">Please use the text area below to describe your experience</label>
+                    <textarea class="form-control" id="describeInOwnWords" rows="6"></textarea>
+                </div>
+
             <br></br>
 
                 <div class="form-actions">
-                     <!--AS: How do I make it such that a selection must be made before continuing on?-->
                     <a href="{% url 'home' %}"><button type="button" class="btn btn-default">Take me home</button></a>
                     <a href="{% url 'q10-resources' %}"><button type="button" class="btn btn-default">Continue</button></a>
                 </div>
