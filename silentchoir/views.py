@@ -36,8 +36,8 @@ class SettingPageView(TemplateView):
 class WherePageView(TemplateView):
     template_name = "q6-where.html"
 
-class IdentityPageView(TemplateView):
-    template_name = "q7-identity.html"
+class IdentifyPageView(TemplateView):
+    template_name = "q7-identify.html"
 
 class SocialPageView(TemplateView):
     template_name = "q8-social.html"
