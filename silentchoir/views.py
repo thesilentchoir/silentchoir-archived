@@ -32,3 +32,24 @@ class WhenPageView(TemplateView):
 
 class SettingPageView(TemplateView):
     template_name = "q5-setting.html"
+
+class WherePageView(TemplateView):
+    template_name = "q6-where.html"
+
+class IdentityPageView(TemplateView):
+    template_name = "q7-identity.html"
+
+class SocialPageView(TemplateView):
+    template_name = "q8-social.html"
+
+class DescribePageView(TemplateView):
+    template_name = "q9-describe.html"
+
+class ResourcesPageView(TemplateView):
+    template_name = "q10-resources.html"
+
+class ConnectPageView(TemplateView):
+    template_name = "q11-connect.html"
+
+class ClosingPageView(TemplateView):
+    template_name = "closing.html"
