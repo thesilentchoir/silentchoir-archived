@@ -10,17 +10,17 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
     </head>
-    <body>
+    <body class="body">
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="header">Please copy and paste a link to the Facebook account of the person who committed the incident you are reporting. </h3>
-            <p> If this person does not have a Facebook account, please select from one of the options below and enter a link to their account.</p>
+            <h3 class="headerQuestion">Please copy and paste a link to the Facebook account of the person who committed the incident you are reporting. </h3>
+            <p class="formText"> If this person does not have a Facebook account, please select from one of the options below and enter a link to their account.</p>
             
             <br></br>
 
             <!-- Users should only get to this page if they answered "YES" to q7 asking if they wish to identify their offender -->
 
-            <form>
+            <form class="formText">
             
                 <div class="form-group">
                     <label for="socialProfile">Please indicate which social account you will use to identify your perpetrator.</label>

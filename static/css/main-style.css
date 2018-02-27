@@ -1,20 +1,26 @@
-html * {
-   background-color: #13292b ;
-   letter-spacing: .15em;
+html {
+   background-color: #13292b;
    color: #a8a8a8;
-   font-family: arial, helvetica, sans-serif;
+   font-family: futura-pt, arial, helvetica, sans-serif;
+}
+
+.body{
+    background-color: #13292b;
 }
 
 .center {
+    background-color: #13292b;
     margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
     width: 50%;
     padding: 10px;
     text-align: justify;
+    color:#a8a8a8;
 } 
 
 .header {
+    background-color: #13292b;
     margin-top: 3em;
     text-align: center;
     font-size: 1.75em;
@@ -22,7 +28,28 @@ html * {
     color: #ffffff
 }
 
+.headerQuestion {
+    background-color: #13292b;
+    text-align: left;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #ffffff
+}
+
+.formText {
+    color: #a8a8a8;
+}
+
+.bodyText {
+    color: #a8a8a8;
+    text-align: justify;
+    /*text-align-last: center;*/
+    max-width: 750px;
+    margin: auto;
+}
+
 .footer {
+    background-color: #13292b;
 	margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -30,9 +57,11 @@ html * {
     text-align: justify;
     font-size: .75em;
     font-weight: 100;
+    color: #a8a8a8
 }
 
 .form-actions {
+    background-color: #13292b;
     text-align: center;
     margin-bottom: 3em;
 }
