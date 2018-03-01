@@ -4,13 +4,51 @@
     <head>
         <meta charset="utf-8">
         <title>The Silent Choir Project</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
     </head>
     <body class="body">
+        <nav class="navbar navbar-static-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static "/img/SilentChoir_Logo-WHITE.png" %}" alt="Silent Choir Logo">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="{% url 'intro' %}">Submit a report<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <!-- thought it might be nice to include some resources here, these need to be filled in -->
+                        <li><a href="#">placeholder1</a></li>
+                        <li><a href="#">placeholder2</a></li>
+                        <li><a href="#">placeholder3</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <!-- we need to make sure the project is set up to go public before our app is live -->
+                        <li><a href="https://github.com/tabdollahi/silentchoir" target="_blank">Github</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <div class="container">
             <h1 class="header">THE SILENT CHOIR PROJECT</h1>
+
+            <br>
 
             <div class="bodyText">
                 <p>
@@ -23,7 +61,8 @@
                 </p>
             </div>
 
-             <!--This button doesn't do anything right now, will need to link it to the first page of the form.-->
+            <br>
+
             <div class="form-actions">
                 <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Join the Silent Choir</button></a>
             </div>
@@ -31,7 +70,7 @@
             <hr>
 
             <div class="footer">
-                Note: If anything in this questionnaire makes you feel uncomfortable or induces any unwanted stress, please do not hesitate to use the <a style="color:#91b735;" href="https://rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank">National Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) to be connected with a trained staff member from a sexual assault service provider in your area. This hotline is operated by <a style="color:#91b735;" href="https://www.rainn.org/" target="_blank">RAINN</a> who can provide counseling and advisory services for survivors.
+                Note: If anything in this questionnaire makes you feel uncomfortable or induces any unwanted stress, please do not hesitate to use the <a style="color: " href="https://rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank">National Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) to be connected with a trained staff member from a sexual assault service provider in your area. This hotline is operated by <a style="color:#91b735;" href="https://www.rainn.org/" target="_blank">RAINN</a> who can provide counseling and advisory services for survivors.
             </div>
         </div>
     </body>
