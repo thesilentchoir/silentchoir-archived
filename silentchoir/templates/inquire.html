@@ -36,7 +36,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Who we are</a></li>
-                        <li><a href="{% url 'inquire' %}">Inquire</a></li>
+                        <li><a href="#">Inquire</a></li>
                         <!-- we need to make sure the project is set up to go public before our app is live -->
                         <li><a href="https://github.com/tabdollahi/silentchoir" target="_blank">Github</a></li>
                     </ul>
@@ -45,33 +45,51 @@
             </div>
           </div>
         </nav>
+
         <div class="container">
-            <h1 class="header">THE SILENT CHOIR PROJECT</h1>
+            <div>
 
-            <br>
+                <h1 style="color:#ffffff">Inquire with us</h1>
 
-            <div class="bodyText">
-                <p>
-                Welcome to the Silent Choir. Our goal is to uncover patterns of harassment and abuse by connecting survivors.
-                </p>
+                <p style="color:#a8a8a8">If you are a developer, or have experience with media or donor outreach for non-profit causes, and would like to help, please send us a message.</p>
 
-                <p>
-                If you have been the victim of abuse in the workplace, at school, at home, or anywhere at all,
-                and would like to share your story on a safe platform, on your own terms, please join us.
-                </p>
+                <p style="color:#a8a8a8">For general inquiries, you may also use this contact form.</p>
+
+                <p style="color:#a8a8a8">Thank you.</p>
             </div>
 
             <br>
 
-            <div class="form-actions">
-                <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Join the Silent Choir</button></a>
-            </div>
+            <form class="formText">
+                <div class = "form-group">
+                    <label for="inputName">Name *</label>
+                    <input type="text" class="form-control" id="inputName" required>
+                </div>
+                <div class = "form-group">
+                    <label for="inputEmailAddress">Email address *</label>
+                    <input type="text" class="form-control" id="inputEmailAddress" required>
+                </div>
+                <div class = "form-group">
+                    <label for="inputSubject">Subject *</label>
+                    <input type="text" class="form-control" id="inputSubject" required>
+                </div>
+                <div class = "form-group">
+                    <label for="inputMessage">Message *</label>
+                    <textarea class="form-control" id="inputMessage" rows="6" required></textarea>
+                </div>
+                <!-- this doesn't go anywhere right now, it should sent an email to silentchoir email -->
+                <div>
+                    <input type="submit" value="Submit" class="btn btn-secondary">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <p class="text-muted"><strong>*</strong> These fields are required. </p>
+                </div>
+        </div>
+            </form>
+        
+            <br>
 
-            <hr>
-
-            <div class="footer">
-                Note: If anything in this questionnaire makes you feel uncomfortable or induces any unwanted stress, please do not hesitate to use the <a style="color: #91b735" href="https://rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank">National Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) to be connected with a trained staff member from a sexual assault service provider in your area. This hotline is operated by <a style="color:#91b735;" href="https://www.rainn.org/" target="_blank">RAINN</a> who can provide counseling and advisory services for survivors.
-            </div>
         </div>
     </body>
 </html>

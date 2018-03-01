@@ -53,3 +53,6 @@ class ConnectPageView(TemplateView):
 
 class ClosingPageView(TemplateView):
     template_name = "closing.html"
+
+class InquirePageView(TemplateView):
+    template_name = "inquire.html"

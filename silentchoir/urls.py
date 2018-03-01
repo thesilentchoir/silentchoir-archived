@@ -35,4 +35,5 @@ urlpatterns = [
     url(r'^q10-resources/$', views.ResourcesPageView.as_view(), name='q10-resources'),
     url(r'^q11-connect/$', views.ConnectPageView.as_view(), name='q11-connect'),
     url(r'^closing/$', views.ClosingPageView.as_view(), name='closing'),
+    url(r'^inquire/$', views.InquirePageView.as_view(), name='inquire'),
 ]
