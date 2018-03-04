@@ -15,35 +15,32 @@ class TriggerPageView(TemplateView):
 class WithWhomPageView(TemplateView):
     template_name = "q1-withWhom.html"
 
-class ComfortLevelPageView(TemplateView):
-    template_name = "q2-comfortLevel.html"
-
 class EmailPageView(TemplateView):
-    template_name = "q3-email.html"
+    template_name = "q2-email.html"
 
 class WhenPageView(TemplateView):
-    template_name = "q4-when.html"
+    template_name = "q3-when.html"
 
 class SettingPageView(TemplateView):
-    template_name = "q5-setting.html"
+    template_name = "q4-setting.html"
 
 class WherePageView(TemplateView):
-    template_name = "q6-where.html"
+    template_name = "q5-where.html"
 
 class IdentifyPageView(TemplateView):
-    template_name = "q7-identify.html"
+    template_name = "q6-identify.html"
 
 class SocialPageView(TemplateView):
-    template_name = "q8-social.html"
+    template_name = "q7-social.html"
 
 class DescribePageView(TemplateView):
-    template_name = "q9-describe.html"
+    template_name = "q8-describe.html"
 
 class ResourcesPageView(TemplateView):
-    template_name = "q10-resources.html"
+    template_name = "q9-resources.html"
 
 class ConnectPageView(TemplateView):
-    template_name = "q11-connect.html"
+    template_name = "q10-connect.html"
 
 class ClosingPageView(TemplateView):
     template_name = "closing.html"

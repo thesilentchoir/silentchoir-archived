@@ -45,45 +45,57 @@
             </div>
           </div>
         </nav>
-
+        
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="headerQuestion">Please copy and paste a link to the Facebook account of the person who committed the incident you are reporting. </h3>
-            <p class="formText"> If this person does not have a Facebook account, please select from one of the options below and enter a link to their account.</p>
+            <h3 class="headerQuestion">In what setting did this incident take place?</h3>
+            <p class="formText">*Please describe the context in which these events took place.</p>
             
             <br>
-
-            <!-- Users should only get to this page if they answered "YES" to q7 asking if they wish to identify their offender -->
 
             <form class="formText">
-            
-                <div class="form-group">
-                    <label for="socialProfile">Please indicate which social account you will use to identify your perpetrator.</label>
-                    <select class="form-control" id="socialProfile">
-                      <option>Facebook</option>
-                      <option>Instagram</option>
-                      <option>Twitter</option>
-                      <option>LinkedIn</option>
-                      <option>IMDB</option>
-                    </select>
-                </div>
-                <!-- We need to validate the link pasted in below based on the social profile selected above -->
-                <div class="md-form">
-                    <label for="socialLink">Please paste in the link below.</label>
-                    <input type="text" id="socialLink" class="form-control">
-                </div>
-
-            <br>
-                 <!--If the option below is selected, we need to disable the inputs above -->
+                
                 <div class="form-check">
-                        <input class="form-check-input" type="radio" name="socialProfle" id="socialProfile-decline" value="I do not wish to name my offender at this time.">
-                        <label class="form-check-label" for="socialProfile-decline">I do not wish to name my offender at this time.</label>
+                    <input class="form-check-input" type="radio" name="setting" id="setting1" value="Social (friend, acquaintance, relationship, dating, neighbor, community)">
+                    <label class="form-check-label" for="setting1">
+                   Social (friend, acquaintance, relationship, dating, neighbor, community)
+                    </label>
                 </div>
-
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="setting" id="setting2" value="Professional (at work, with a colleague or boss)">
+                    <label class="form-check-label" for="setting2">
+                   Professional (at work, with a colleague or boss)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="setting" id="setting3" value="Educational (on campus, with a fellow student or professor, coaches, mentors)">
+                    <label class="form-check-label" for="setting3">
+                   Educational (on campus, with a fellow student or professor, coaches, mentors)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="setting" id="setting4" value="Faith-based (in a place or worship, with a faith-leader)">
+                    <label class="form-check-label" for="setting4">
+                   Faith-based (in a place or worship, with a faith-leader)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="setting" id="setting5" value="Family">
+                    <label class="form-check-label" for="setting5">
+                  Family
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="setting" id="setting6" value="Other">
+                    <label class="form-check-label" for="setting6">
+                   Other
+                    </label>
+                </div>
+                
             <br>
 
                 <div class="form-actions">
-                    <a href="{% url 'q9-describe' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
+                    <a href="{% url 'q5-where' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
                     <br>
                     <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
                 </div>

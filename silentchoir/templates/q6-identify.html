@@ -45,50 +45,31 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="headerQuestion">How comfortable are you talking about your experience?</h3>
-            
+            <h3 class="headerQuestion">Can you identify the person who violated you?*</h3>
+                    
             <br>
 
             <form class="formText">
-                
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel1" value="Even thinking about it gives me severe anxiety and I never discuss it.">
-                    <label class="form-check-label" for="comfortLevel1">
-                   Even thinking about it gives me severe anxiety and I never discuss it.
+                    <input class="form-check-input" type="radio" name="canIdentify" id="canIdentify-yes" value="Yes">
+                    <label class="form-check-label" for="canIdentify-yes">
+                   Yes
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel2" value="Only in very intimate settings have I been able to talk about my experiences.">
-                    <label class="form-check-label" for="comfortLevel2">
-                   Only in very intimate settings have I been able to talk about my experiences.
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel3" value="I’m not always ready to discuss what happened, but I have had been able to do so in the past.">
-                    <label class="form-check-label" for="comfortLevel3">
-                   I’m not always ready to discuss what happened, but I have had been able to do so in the past.
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel4" value="It’s never easy, but I am able to share my experience with others and continue functioning reasonably well afterward.">
-                    <label class="form-check-label" for="comfortLevel4">
-                   It’s never easy, but I am able to share my experience with others and continue functioning reasonably well afterward.
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel5" value="I can share my experience in detail, have done so in the past and will do so in the future.">
-                    <label class="form-check-label" for="comfortLevel5">
-                   I can share my experience in detail, have done so in the past and will do so in the future.
+                    <input class="form-check-input" type="radio" name="canIdentify" id="canIdentify-no" value="No">
+                    <label class="form-check-label" for="canIdentify-no">
+                   No
                     </label>
                 </div>
 
             <br>
 
                 <div class="form-actions">
-                    <a href="{% url 'q3-email' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
+                    <a href="{% url 'q7-social' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
                     <br>
                     <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
                 </div>

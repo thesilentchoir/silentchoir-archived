@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 {% load static %}
 <html>
@@ -45,29 +46,26 @@
             </div>
           </div>
         </nav>
-        
+       
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="headerQuestion">In your own words, please give a detailed account of your experience.</h3>
-            <p class="formText"><i>(optional)</i> The more detail you can provide, the better.</p>
-            
+            <h3 class="headerQuestion"> Please provide your email address.</h3>
+            <p class="formText">*For your security, and the safety and security of others, please enter an email we can use to verify your account and can reach you on at a later date. We will only contact you with information directly related to your report. We strongly advise that you use an email address that is not managed or accessible to anybody but you (including, for example, an employer or spouse).</p>
+
             <br>
 
             <form class="formText">
-            
-                <div class="form-group">
-                    <label for="describeInOwnWords">Please use the text area below to describe your experience</label>
-                    <textarea class="form-control" id="describeInOwnWords" rows="6"></textarea>
-                </div>
-
-            <br>
-
-                <div class="form-actions">
-                    <a href="{% url 'q10-resources' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
-                    <br>
-                    <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
-                </div>
-
+              <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <input type= "email" class= "form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Please enter a valid email address">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              
+              <div class="form-actions">
+                  <a href="{% url 'q3-when' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
+                  <br>
+                  <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
+              </div>
             </form>
 
             <!-- I'd like to style the Modal to be a different background color. -->

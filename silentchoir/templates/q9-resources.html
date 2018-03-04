@@ -6,15 +6,12 @@
         <title>The Silent Choir Project</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
     </head>
     <body class="body">
-       
+
         <nav class="navbar navbar-static-top">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -48,31 +45,33 @@
             </div>
           </div>
         </nav>
-       
+        
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="headerQuestion"> When did the incident you are reporting take place?</h3>
-            <p class="formText">*Please be as accurate as you can.</p>
+            <h3 class="headerQuestion">Do you want us to put you in touch with counselors and/or advisors who can best advise you on available resources and the best course of action for your case?*</h3>
+                        
+            <br>
 
             <form class="formText">
-                
-                <div class="input-group date" data-provide="datepicker">
-                    <!-- <label for="datepicker">Date</label> -->
-                    <input type="text" class="form-control" id="datepicker" placeholder = "MM/DD/YYYY">
-                    <div class="input-group-addon">
-                        <span class="glyphicon glyphicon-th"></span>
-                    </div>
+                <!-- [OPEN QUESTION] If users select YES here, are we skipping the next question where we connect users to survivors? -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="resources" id="resources-yes" value="Yes">
+                    <label class="form-check-label" for="resources-yes">Yes</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Estimated" id="Estimated">
-                    <label class="form-check-label" for="Estimated">Estimated</label>
-                    <small class="form-text text-muted">(Please check if the date selected is estimated.)</small>
+                    <input class="form-check-input" type="radio" name="resources" id="resources-no" value="No">
+                    <label class="form-check-label" for="resources-no">No</label>
                 </div>
-
-                <br>
+                <!--If this option is selected, we need to email resources to user with further information -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="resources" id="resources-notSure" value="I’m not sure, please send me more information.">
+                    <label class="form-check-label" for="resources-notSure">I’m not sure, please send me more information.</label>
+                </div>
+                                
+            <br>
 
                 <div class="form-actions">
-                    <a href="{% url 'q5-setting' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
+                    <a href="{% url 'q10-connect' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
                     <br>
                     <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
                 </div>
