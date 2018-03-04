@@ -53,16 +53,52 @@
 
             <div>
             	<p>
-                Disclosing violence and other abuses can be an intimate, delicate, and often a painful process that can trigger a number of emotional reactions. While your participation can be a healing and meaningful contribution to combating rape culture, you are in no way obligated to share your story.
-               	</p>
+              Disclosing violence and other abuses can be an intimate, delicate, and often a painful process that can trigger a number of emotional reactions. While your participation can be a healing and meaningful contribution to combating rape culture, you are in no way obligated to share your story.
+             	</p>
 
             	<p>
-				Please consider whether this is the right time for you to be completing this report. Do you have a support system or other resources to access should you feel triggered? Are you in a safe place? Please call the <a style="color:#91b735;" href="https://rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank">National Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) if you need to speak with a trained professional.
-                </p>
+				      Please consider whether this is the right time for you to be completing this report. Do you have a support system or other resources to access should you feel triggered? Are you in a safe place? Please call the <a style="color:#91b735;" href="https://rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank">National Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) if you need to speak with a trained professional.
+              </p>
             </div>
+            <div>
+              <h3 class="headerQuestion">How comfortable are you talking about your experience?</h3>
+            
+              <br>
+              
+              <div class="form-check">
+                      <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel1" value="Even thinking about it gives me severe anxiety and I never discuss it.">
+                      <label class="form-check-label" for="comfortLevel1">
+                     Even thinking about it gives me severe anxiety and I never discuss it.
+                      </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel2" value="Only in very intimate settings have I been able to talk about my experiences.">
+                  <label class="form-check-label" for="comfortLevel2">
+                 Only in very intimate settings have I been able to talk about my experiences.
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel3" value="I’m not always ready to discuss what happened, but I have had been able to do so in the past.">
+                  <label class="form-check-label" for="comfortLevel3">
+                 I’m not always ready to discuss what happened, but I have had been able to do so in the past.
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel4" value="It’s never easy, but I am able to share my experience with others and continue functioning reasonably well afterward.">
+                  <label class="form-check-label" for="comfortLevel4">
+                 It’s never easy, but I am able to share my experience with others and continue functioning reasonably well afterward.
+                  </label>
+              </div>
+              <div class="form-check">
+                      <input class="form-check-input" type="radio" name="comfortLevel" id="comfortLevel5" value="I can share my experience in detail, have done so in the past and will do so in the future.">
+                      <label class="form-check-label" for="comfortLevel5">
+                     I can share my experience in detail, have done so in the past and will do so in the future.
+                      </label>
+              </div> 
+            </div> 
 
             <div class="form-actions">
-                <a href="{% url 'trigger' %}"><button type="button" class="btn btn-default">Continue with my report</button></a>
+                <a href="{% url 'legal' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
                 <br>
                 <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
             </div>

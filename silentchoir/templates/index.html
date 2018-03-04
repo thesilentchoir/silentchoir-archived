@@ -21,7 +21,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="{% url 'intro' %}">Submit a report<span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="{% url 'home' %}">Submit a report<span class="sr-only">(current)</span></a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -95,12 +95,10 @@
                     You can abandon your report and delete it entirely at any time and note that we do not store any of your data.
                     </p>
                 </div>
-            </div>
-
-            <br>
+            </div>w
 
             <div class="form-actions">
-                <a href="{% url 'intro' %}"><button type="button" class="btn btn-default">Submit a report</button></a>
+                <a href="{% url 'trigger' %}"><button type="button" class="btn btn-default customButton">Submit a report</button></a>
             </div>
 
             <hr>

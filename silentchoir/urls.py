@@ -18,8 +18,6 @@ from silentchoir import views
 
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view(), name='home'),
-    url(r'^intro/$', views.IntroPageView.as_view(), name='intro'),
-    url(r'^about/$', views.AboutPageView.as_view(), name='about'),
     url(r'^legal/$', views.LegalPageView.as_view(), name='legal'),
     url(r'^consent/$', views.ConsentPageView.as_view(), name='consent'),
     url(r'^trigger/$', views.TriggerPageView.as_view(), name='trigger'),
