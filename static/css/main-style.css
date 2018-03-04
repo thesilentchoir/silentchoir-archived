@@ -51,6 +51,7 @@ ul.nav a:hover {
 .header {
     background-color: #13292b;
     margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
     font-size: 1.75em;
     font-weight: bold;
@@ -80,11 +81,11 @@ ul.nav a:hover {
 .footer {
     background-color: #13292b;
 	margin: auto;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding: 10px;
     text-align: justify;
-    font-size: .75em;
+    font-size: .8em;
     font-weight: 400;
     color: #a8a8a8
 }
