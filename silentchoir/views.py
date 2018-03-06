@@ -6,8 +6,8 @@ class HomePageView(TemplateView):
 class LegalPageView(TemplateView):
     template_name = "legal.html"
 
-class ConsentPageView(TemplateView):
-    template_name = "consent.html"
+class SecurityPageView(TemplateView):
+    template_name = "security.html"
 
 class TriggerPageView(TemplateView):
     template_name = "trigger.html"

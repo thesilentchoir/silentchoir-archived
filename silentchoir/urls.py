@@ -19,7 +19,7 @@ from silentchoir import views
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view(), name='home'),
     url(r'^legal/$', views.LegalPageView.as_view(), name='legal'),
-    url(r'^consent/$', views.ConsentPageView.as_view(), name='consent'),
+    url(r'^security/$', views.SecurityPageView.as_view(), name='security'),
     url(r'^trigger/$', views.TriggerPageView.as_view(), name='trigger'),
     url(r'^q1-withWhom/$', views.WithWhomPageView.as_view(), name='q1-withWhom'),
     url(r'^q2-email/$', views.EmailPageView.as_view(), name='q2-email'),
