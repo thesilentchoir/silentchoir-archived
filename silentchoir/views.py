@@ -25,13 +25,10 @@ class SettingPageView(TemplateView):
     template_name = "q4-setting.html"
 
 class IdentifyPageView(TemplateView):
-    template_name = "q6-identify.html"
-
-class SocialPageView(TemplateView):
-    template_name = "q7-social.html"
+    template_name = "q5-identify.html"
 
 class DescribePageView(TemplateView):
-    template_name = "q8-describe.html"
+    template_name = "q6-describe.html"
 
 class ResourcesPageView(TemplateView):
     template_name = "q9-resources.html"
