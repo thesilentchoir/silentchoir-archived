@@ -18,14 +18,11 @@ class WithWhomPageView(TemplateView):
 class EmailPageView(TemplateView):
     template_name = "q2-email.html"
 
-class WhenPageView(TemplateView):
-    template_name = "q3-when.html"
+class WhenAndWherePageView(TemplateView):
+    template_name = "q3-whenAndWhere.html"
 
 class SettingPageView(TemplateView):
     template_name = "q4-setting.html"
-
-class WherePageView(TemplateView):
-    template_name = "q5-where.html"
 
 class IdentifyPageView(TemplateView):
     template_name = "q6-identify.html"
