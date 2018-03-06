@@ -48,25 +48,24 @@
         
         <div class="container">
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="headerQuestion">Do you want us to connect you with other survivors who may have experienced an incident similar to the one reported?</h3>
-            <p class="formText">*Please note that we will only connect you if we can confidently establish that others experienced misconduct at the hands of the same offender and by choosing to be contacted, you will likely jeopardize your abilities to seek justices through the legal system.</p>
-            
+            <h3 class="headerQuestion">Do you want us to put you in touch with counselors and/or advisors who can best advise you on available resources and the best course of action for your case?</h3>
+                        
             <br>
 
             <form class="formText">
-                <!-- [OPEN QUESTION] What do we do if user selects YES here, this will likely come from feedback from lawyers/therapists. -->
+                <!-- [OPEN QUESTION] If users select YES here, are we skipping the next question where we connect users to survivors? -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="connect" id="connect-yes" value="Yes">
-                    <label class="form-check-label" for="connect-yes">Yes</label>
+                    <input class="form-check-input" type="radio" name="resources" id="resources-yes" value="Yes">
+                    <label class="form-check-label" for="resources-yes">Yes</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="connect" id="connect-no" value="No">
-                    <label class="form-check-label" for="connnect-no">No</label>
+                    <input class="form-check-input" type="radio" name="resources" id="resources-no" value="No">
+                    <label class="form-check-label" for="resources-no">No</label>
                 </div>
                 <!--If this option is selected, we need to email resources to user with further information -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="connect" id="connect-notSure" value="I’m not sure, please send me more information.">
-                    <label class="form-check-label" for="connect-notSure">I’m not sure, please send me more information.</label>
+                    <input class="form-check-input" type="radio" name="resources" id="resources-notSure" value="I’m not sure, please send me more information.">
+                    <label class="form-check-label" for="resources-notSure">I’m not sure, please send me more information.</label>
                 </div>
                                 
             <br>

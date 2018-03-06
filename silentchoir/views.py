@@ -30,11 +30,11 @@ class IdentifyPageView(TemplateView):
 class DescribePageView(TemplateView):
     template_name = "q6-describe.html"
 
-class ResourcesPageView(TemplateView):
-    template_name = "q9-resources.html"
-
 class ConnectPageView(TemplateView):
-    template_name = "q10-connect.html"
+    template_name = "q7-connect.html"
+
+class ResourcesPageView(TemplateView):
+    template_name = "q8-resources.html"
 
 class ClosingPageView(TemplateView):
     template_name = "closing.html"

@@ -46,32 +46,42 @@
           </div>
         </nav>
         
-        <div class="container">
+        <div class="container formText">
+            <p>The purpose of our platform is to uncover patterns of abuse. To do this, we need your permission to privately connect you with other survivors who may have experienced misconduct or abuse at the hands of the same offender.</p>
+
+            <p>You are anonymous on The Silent Choir. When connecting you with other survivors you will stay anonymous. Here’s what will happen.</p>
+
+            <ol>
+                <li>If we find other survivors we would like to connect you with, you will receive an email asking for permission to connect you with these survivors.</li>
+                <li>If you consent to being connected to survivors, we will connect you with these survivors anonymously - they will not see your email address or any part of your report.</li>
+                <li>You will be able to establish a conversation with other survivors via secure chat or email, and it will be your choice to continue the conversation, walk away from the conversation, to stay anonymous or reveal your identity... it’s all up to you.</li>
+            </ol>
+
             <!--AS: Would like to figure out a way to style these questions better-->
-            <h3 class="headerQuestion">Do you want us to put you in touch with counselors and/or advisors who can best advise you on available resources and the best course of action for your case?</h3>
-                        
+            <h3 class="headerQuestion">With this in mind, do you authorize us to contact you, via the email address you provided, if we find other survivors who have a shared experience with you?</h3>
+            
             <br>
 
             <form class="formText">
-                <!-- [OPEN QUESTION] If users select YES here, are we skipping the next question where we connect users to survivors? -->
+                <!-- [OPEN QUESTION] What do we do if user selects YES here, this will likely come from feedback from lawyers/therapists. -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="resources" id="resources-yes" value="Yes">
-                    <label class="form-check-label" for="resources-yes">Yes</label>
+                    <input class="form-check-input" type="radio" name="connect" id="connect-yes" value="Yes">
+                    <label class="form-check-label" for="connect-yes">Yes</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="resources" id="resources-no" value="No">
-                    <label class="form-check-label" for="resources-no">No</label>
+                    <input class="form-check-input" type="radio" name="connect" id="connect-no" value="No">
+                    <label class="form-check-label" for="connnect-no">No</label>
                 </div>
                 <!--If this option is selected, we need to email resources to user with further information -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="resources" id="resources-notSure" value="I’m not sure, please send me more information.">
-                    <label class="form-check-label" for="resources-notSure">I’m not sure, please send me more information.</label>
+                    <input class="form-check-input" type="radio" name="connect" id="connect-notSure" value="I’m not sure, please send me more information.">
+                    <label class="form-check-label" for="connect-notSure">I’m not sure, please send me more information.</label>
                 </div>
                                 
             <br>
 
                 <div class="form-actions">
-                    <a href="{% url 'q10-connect' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
+                    <a href="{% url 'q8-resources' %}"><button type="button" class="btn btn-default customButton">Continue with my report</button></a>
                     <br>
                     <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my report and any information submitted to this point.</a></small>
                 </div>

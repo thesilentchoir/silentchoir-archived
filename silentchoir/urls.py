@@ -27,8 +27,8 @@ urlpatterns = [
     url(r'^q4-setting/$', views.SettingPageView.as_view(), name='q4-setting'),
     url(r'^q5-identify/$', views.IdentifyPageView.as_view(), name='q5-identify'),
     url(r'^q6-describe/$', views.DescribePageView.as_view(), name='q6-describe'),
-    url(r'^q9-resources/$', views.ResourcesPageView.as_view(), name='q9-resources'),
-    url(r'^q10-connect/$', views.ConnectPageView.as_view(), name='q10-connect'),
+    url(r'^q7-connect/$', views.ConnectPageView.as_view(), name='q7-connect'),
+    url(r'^q8-resources/$', views.ResourcesPageView.as_view(), name='q8-resources'),
     url(r'^closing/$', views.ClosingPageView.as_view(), name='closing'),
     url(r'^inquire/$', views.InquirePageView.as_view(), name='inquire'),
 ]
