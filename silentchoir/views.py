@@ -41,3 +41,6 @@ class ClosingPageView(TemplateView):
 
 class InquirePageView(TemplateView):
     template_name = "inquire.html"
+
+class InquirePageView(TemplateView):
+    template_name = "humans.html"

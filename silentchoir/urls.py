@@ -31,4 +31,5 @@ urlpatterns = [
     url(r'^q8-resources/$', views.ResourcesPageView.as_view(), name='q8-resources'),
     url(r'^closing/$', views.ClosingPageView.as_view(), name='closing'),
     url(r'^inquire/$', views.InquirePageView.as_view(), name='inquire'),
+    url(r'^humans/$', views.InquirePageView.as_view(), name='humans'),
 ]
