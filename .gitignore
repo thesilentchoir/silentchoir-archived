@@ -1,5 +1,6 @@
-.env
-env/
-.idea/
+venv
 *.pyc
-staticfiles/
+staticfiles
+.env
+db.sqlite3
+.idea/

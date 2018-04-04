@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<!--AS: Would like to figure out a way to style these questions better-->
+<h3 class="header">THANK YOU FOR JOINING THE SILENT CHOIR</h3>
+
+<br>
+
+<form class="bodyText">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a condimentum nulla, in suscipit erat. Nam
+        fermentum id magna vel vulputate. Nam vel congue purus, a hendrerit metus. Ut scelerisque, turpis sed consequat
+        hendrerit, quam nulla facilisis felis, et pharetra ante tortor vel lacus. Vestibulum dignissim purus eget risus
+        laoreet suscipit. Maecenas efficitur sapien eu purus suscipit, id sollicitudin leo ultrices. Fusce bibendum
+        velit tincidunt justo mattis hendrerit. Sed leo erat, faucibus sit amet mollis non, porta ac nisl.</p>
+
+    <br>
+
+    <div class="form-actions">
+        <!--AS: How do I make it such that a selection must be made before continuing on?-->
+        <a href="{% url 'home' %}">
+            <button type="button" class="btn btn-default customButton">Take me home</button>
+        </a>
+    </div>
+
+</form>
+
+{% endblock %}

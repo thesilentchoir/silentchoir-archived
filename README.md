@@ -29,38 +29,25 @@ Install Virtualenv, a dependency management tool that creates isolated Python en
 $ python3 -m pip install --user virtualenv
 ```
 
-Create the virtual environment.
+## Running Locally
 
-```
-$ python3 -m virtualenv env
-```
+Make sure you have Python [installed properly](http://install.python-guide.org). Also, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
-Activate the virtual environment.
+```sh
+$ pipenv install
 
-```
-$ source env/bin/activate
-```
+$ pipenv shell
 
-Install packages.
-
-```
-$ pip install -r requirements.txt
+$ heroku local
 ```
 
-Copy the `.env` file from a teammate and add it to your project directory.
+Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-Install Postgres and create the database in the Postgres interactive command prompt.
+## Deploying to Prod
 
-```
->> CREATE DATABASE silentchoir;
-```
-
-Verify you can run the application.
+```sh
 
 ```
-$ python3 manage.py runserver
-```
-
 
 ## License
 

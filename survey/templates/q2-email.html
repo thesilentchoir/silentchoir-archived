@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--AS: Would like to figure out a way to style these questions better-->
+<h3 class="headerQuestion"> Please provide your email address.</h3>
+<p class="formText">*For your security, and the safety and security of others, please enter an email we can use to
+    verify your account and can reach you on at a later date. We will only contact you with information directly related
+    to your report. We strongly advise that you use an email address that is not managed or accessible to anybody but
+    you (including, for example, an employer or spouse).</p>
+
+<br>
+
+<form class="formText">
+    <div class="form-group">
+        <label for="InputEmail1">Email address</label>
+        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+               placeholder="Please enter a valid email address">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-actions">
+        <a href="{% url 'q3-whenAndWhere' %}">
+            <button type="button" class="btn btn-default customButton">Continue with my report</button>
+        </a>
+        <br>
+        <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my
+            report and any information submitted to this point.</a></small>
+    </div>
+</form>
+
+{% include "modal.html" with text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam ligula, vestibulum eu facilisis nec, rutrum ac enim. Sed pulvinar elit purus, et ultrices velit lobortis sed. Pellentesque lobortis congue rhoncus. Nulla euismod magna lorem, in tempor ex elementum ut. Vestibulum fringilla enim ligula, pulvinar ullamcorper tellus finibus vel. Aliquam erat volutpat. Mauris et enim lorem. Quisque sit amet erat arcu. Sed id interdum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus mattis lectus vitae nulla vehicula dictum. Pellentesque justo eros, cursus et lacus a, posuere pharetra elit. Nullam luctus risus eu lacus sagittis vulputate. Vestibulum consectetur nisi a sem viverra, quis lacinia dui vestibulum." %}
+
+{% endblock %}

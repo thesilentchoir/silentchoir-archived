@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+
+    <h1 style="color:#ffffff">Inquire with us</h1>
+
+    <p style="color:#a8a8a8">If you are a developer, or have experience with media or donor outreach for non-profit
+        causes, and would like to help, please send us a message.</p>
+
+    <p style="color:#a8a8a8">For general inquiries, you may also use this contact form.</p>
+
+    <p style="color:#a8a8a8">Thank you.</p>
+</div>
+
+<br>
+
+<form class="formText">
+    <div class="form-group">
+        <label for="inputName">Name *</label>
+        <input type="text" class="form-control" id="inputName" required>
+    </div>
+    <div class="form-group">
+        <label for="inputEmailAddress">Email address *</label>
+        <input type="text" class="form-control" id="inputEmailAddress" required>
+    </div>
+    <div class="form-group">
+        <label for="inputSubject">Subject *</label>
+        <input type="text" class="form-control" id="inputSubject" required>
+    </div>
+    <div class="form-group">
+        <label for="inputMessage">Message *</label>
+        <textarea class="form-control" id="inputMessage" rows="6" required></textarea>
+    </div>
+    <!-- this doesn't go anywhere right now, it should sent an email to silentchoir email -->
+    <div>
+        <input type="submit" value="Submit" class="btn btn-secondary customButton">
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-muted"><strong>*</strong> These fields are required. </p>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
