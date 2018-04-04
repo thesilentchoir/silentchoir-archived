@@ -2,23 +2,13 @@
 
 url = "https://pypi.python.org/simple"
 verify_ssl = true
-name = "pypi"
 
 
 [packages]
 
-click = "==6.7"
-django = "==2.0.2"
-"psycopg2" = "==2.7.3.2"
-python-dotenv = "==0.7.1"
-pytz = "==2017.3"
-virtualenv = "==15.1.0"
+django = "*"
 gunicorn = "*"
 django-heroku = "*"
-
-
-[dev-packages]
-
 
 
 [requires]

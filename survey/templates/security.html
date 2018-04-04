@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="header">SECURITY NOTICE</h1>
+
+<form class="bodyText">
+
+    <div>
+        <p>Security is our highest priority. Absolutely everything submitted to this site will be scrubbed of any
+            identifiers, encrypted and stored in a way that neither we, nor anybody else, can trace it back to you.</p>
+
+        <p>However, for this very reason, if you lose access to the email address with which you verified yourself while
+            submitting your report, we will have no way to retrieve it or associate it with you. Please be sure to
+            provide an email address that we can contact you at if the need should arise.</p>
+    </div>
+
+    <div class="form-actions">
+        <a href="{% url 'q2-email' %}">
+            <button type="button" class="btn btn-default customButton">Continue with my report</button>
+        </a>
+        <br>
+        <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my
+            report and any information submitted to this point.</a></small>
+    </div>
+
+</form>
+
+{% include "modal.html" with text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam ligula, vestibulum eu facilisis nec, rutrum ac enim. Sed pulvinar elit purus, et ultrices velit lobortis sed. Pellentesque lobortis congue rhoncus. Nulla euismod magna lorem, in tempor ex elementum ut. Vestibulum fringilla enim ligula, pulvinar ullamcorper tellus finibus vel. Aliquam erat volutpat. Mauris et enim lorem. Quisque sit amet erat arcu. Sed id interdum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus mattis lectus vitae nulla vehicula dictum. Pellentesque justo eros, cursus et lacus a, posuere pharetra elit. Nullam luctus risus eu lacus sagittis vulputate. Vestibulum consectetur nisi a sem viverra, quis lacinia dui vestibulum." %}
+
+{% endblock %}

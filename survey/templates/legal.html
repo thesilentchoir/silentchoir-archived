@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="header">LEGAL NOTICE</h1>
+
+<form class="bodyText">
+
+    <div>
+        <p>It is our obligation to create a legal framework that protects you from undermining a potential legal case
+            but also from being sued for speaking out..</p>
+
+        <p>For this reason, at this time, we are only taking reports from those who are ready to consider potential
+            legal action against their offenders. If you feel that you would never be comfortable revealing your
+            identity to a legal advocate or therapist (even if you knew that you are not alone with your experience), we
+            strongly discourage you from continuing with a report.</p>
+
+        <p>However, if knowing you are not alone, you would be willing to discuss your options with a legal advocate,
+            then let’s proceed.</p>
+
+    </div>
+
+    <div class="form-actions">
+        <a href="{% url 'security' %}">
+            <button type="button" class="btn btn-default customButton">Continue with my report</button>
+        </a>
+        <br>
+        <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my
+            report and any information submitted to this point.</a></small>
+    </div>
+
+</form>
+
+{% include "modal.html" with text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam ligula, vestibulum eu facilisis nec, rutrum ac enim. Sed pulvinar elit purus, et ultrices velit lobortis sed. Pellentesque lobortis congue rhoncus. Nulla euismod magna lorem, in tempor ex elementum ut. Vestibulum fringilla enim ligula, pulvinar ullamcorper tellus finibus vel. Aliquam erat volutpat. Mauris et enim lorem. Quisque sit amet erat arcu. Sed id interdum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus mattis lectus vitae nulla vehicula dictum. Pellentesque justo eros, cursus et lacus a, posuere pharetra elit. Nullam luctus risus eu lacus sagittis vulputate. Vestibulum consectetur nisi a sem viverra, quis lacinia dui vestibulum." %}
+
+{% endblock %}

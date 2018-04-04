@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--AS: Would like to figure out a way to style these questions better-->
+<h3 class="headerQuestion">In what setting did this incident take place?</h3>
+<p class="formText">*Please describe the context in which these events took place.</p>
+
+<br>
+
+<form class="formText">
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="setting" id="setting1"
+               value="Social (friend, acquaintance, relationship, dating, neighbor, community)">
+        <label class="form-check-label" for="setting1">
+            Social (friend, acquaintance, relationship, dating, neighbor, community)
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="setting" id="setting2"
+               value="Professional (at work, with a colleague or boss)">
+        <label class="form-check-label" for="setting2">
+            Professional (at work, with a colleague or boss)
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="setting" id="setting3"
+               value="Educational (on campus, with a fellow student or professor, coaches, mentors)">
+        <label class="form-check-label" for="setting3">
+            Educational (on campus, with a fellow student or professor, coaches, mentors)
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="setting" id="setting4"
+               value="Faith-based (in a place or worship, with a faith-leader)">
+        <label class="form-check-label" for="setting4">
+            Faith-based (in a place or worship, with a faith-leader)
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="setting" id="setting5" value="Family">
+        <label class="form-check-label" for="setting5">
+            Family
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="setting" id="setting6" value="Other">
+        <label class="form-check-label" for="setting6">
+            Other
+        </label>
+    </div>
+
+    <br>
+
+    <div class="form-actions">
+        <a href="{% url 'q5-identify' %}">
+            <button type="button" class="btn btn-default customButton">Continue with my report</button>
+        </a>
+        <br>
+        <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my
+            report and any information submitted to this point.</a></small>
+    </div>
+
+</form>
+
+{% include "modal.html" with text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam ligula, vestibulum eu facilisis nec, rutrum ac enim. Sed pulvinar elit purus, et ultrices velit lobortis sed. Pellentesque lobortis congue rhoncus. Nulla euismod magna lorem, in tempor ex elementum ut. Vestibulum fringilla enim ligula, pulvinar ullamcorper tellus finibus vel. Aliquam erat volutpat. Mauris et enim lorem. Quisque sit amet erat arcu. Sed id interdum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus mattis lectus vitae nulla vehicula dictum. Pellentesque justo eros, cursus et lacus a, posuere pharetra elit. Nullam luctus risus eu lacus sagittis vulputate. Vestibulum consectetur nisi a sem viverra, quis lacinia dui vestibulum." %}
+
+{% endblock %}

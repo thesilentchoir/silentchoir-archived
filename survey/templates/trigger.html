@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="header">NOTICE OF POTENTIAL RISKS</h1>
+
+<form class="bodyText">
+
+    <div>
+        <p>As part of creating your report, you will be asked a series of questions related to incidents of violence or
+            harassment.</p>
+
+        <p>Discussing harassment, abuse and violence is often a painful process that can trigger a number of intense
+            emotional reactions. Please note that sharing your story is completely voluntary, and you should feel
+            absolutely no obligation to share your story if you are not yet ready.</p>
+
+        <p>Are you in a safe place right now? Do you have a support system or other resources to access should you feel
+            triggered? Before proceeding, please consider whether you are in the right place to be completing this
+            report.</p>
+
+        <p>If at any point you feel you need emotional support of any kind, please call the <a style="color:#91b735;"
+                                                                                               href="https://rainn.org/about-national-sexual-assault-telephone-hotline"
+                                                                                               target="_blank">National
+            Sexual Assault Telephone Hotline</a> (800.656.HOPE (4673)) where you will be able to speak with a trained
+            professional.</p>
+    </div>
+
+    <div class="form-actions">
+        <a href="{% url 'q1-withWhom' %}">
+            <button type="button" class="btn btn-default customButton">Continue with my report</button>
+        </a>
+        <br>
+        <small><a style="color:#91b735;" data-toggle="modal" data-target="#takeMeHomeModal">I want to terminate my
+            report and any information submitted to this point.</a></small>
+    </div>
+
+</form>
+
+{% include "modal.html" with text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam ligula, vestibulum eu facilisis nec, rutrum ac enim. Sed pulvinar elit purus, et ultrices velit lobortis sed. Pellentesque lobortis congue rhoncus. Nulla euismod magna lorem, in tempor ex elementum ut. Vestibulum fringilla enim ligula, pulvinar ullamcorper tellus finibus vel. Aliquam erat volutpat. Mauris et enim lorem. Quisque sit amet erat arcu. Sed id interdum orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus mattis lectus vitae nulla vehicula dictum. Pellentesque justo eros, cursus et lacus a, posuere pharetra elit. Nullam luctus risus eu lacus sagittis vulputate. Vestibulum consectetur nisi a sem viverra, quis lacinia dui vestibulum." %}
+
+{% endblock %}
